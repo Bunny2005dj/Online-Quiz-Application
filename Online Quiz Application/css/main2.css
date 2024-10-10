@@ -1,0 +1,321 @@
+body
+{
+overflow-x:hidden;
+width:100%;
+font: 15px "Century Gothic", "Times Roman", sans-serif;
+background:url(../image/bg.jpg);
+backdrop-filter: blur(20px);
+min-height:550px;
+background-attachment:fixed;
+}
+.bg
+{
+min-height:540px;
+}
+.bg1
+{
+background:url(../image/bg.jpg);
+min-height:535px;
+}
+
+@font-face {
+   font-family: 'typo';
+    src: url('../fonts/typo.ttf');
+	}
+
+@font-face {
+   font-family: 'gothic';
+    src: url('../fonts/gothics.ttf');
+	}
+
+.panel{
+background-color: rgba(51, 51, 51, 0.6)!important;
+margin:40px;
+margin-top:70px;
+padding:20px;
+font: 15px "Century Gothic", "Times Roman", sans-serif;
+border-radius: 7px;
+backdrop-filter: blur(20px);
+}
+
+.title
+{
+font-family:'typo';
+}
+
+.header
+{
+background:rgba(255,255,255,0.1);
+height:70px;
+}
+.logo
+{
+font-family:'typo';
+font-size:35px;
+color: #fff; 
+margin:15px;
+}
+
+.title1{
+font: 16px "Century Gothic", "Times Roman", sans-serif;
+}
+.title2{
+font-family: 'Ubuntu', sans-serif;
+font-size:20px;
+}
+
+
+.sub1
+{
+width:90px;
+color:#202020;
+background:orange;
+font-size:15px;
+height:35px;
+margin:20px;
+padding:10px;
+width:100px;
+}
+
+
+.sub
+{
+width:100%;
+background-color:#9acd32;
+font-size:20px;
+padding:2px;
+margin-top:15px;
+margin-right:20px;
+}
+.sub:hover
+{
+color:#fff;
+}
+
+.footer
+{
+    font-size: 15px;
+    background-color: rgba(255,255,255,0.2);
+    color: #fff; /* White text for visibility */
+    padding: 15px 75px; /* Adjust padding as necessary */
+    display: flex;
+    justify-content: space-between; /* Space between links and logo */
+    align-items: center; /* Vertically align items */
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000; /* Footer stays on top */
+    border: none; /* No border */
+    box-shadow: none;
+}
+.footer-nav {
+    display: flex; /* Align links horizontally */
+    gap: 35px; /* Space between links */
+
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    text-align: center;
+}
+
+.footer a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 70%;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transform-origin: right;
+}
+
+.footer a:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Footer Logo */
+.footer-logo {
+    font-size: 16px;
+    color: #fff;
+    padding-right: 40px;
+}
+.row p{
+    margin-right: 30px;
+}
+.footer .box a {
+    padding: 5px 15px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.footer .box {
+    border: none; /* Remove box borders */
+}
+
+.box {
+    padding: 9px;
+}
+
+hr{
+color:#000000;
+}
+.top
+{
+margin-top:20px;
+}
+.log1
+{
+font: 15px 'Ubuntu', sans-serif;
+color:orange;
+margin-left:10px;
+}
+
+.log
+{
+margin:10px;
+margin-right:60px;
+margin-left:5px;
+color:orange;
+text-decoration:none;
+font-size:20px;
+font-size:15px;
+}
+.log:hover
+{
+color:#9acd32;
+border-top:2px solid;
+border-color:orange;
+text-decoration:none;
+}
+.bg {
+    min-height: calc(100vh - 70px); /* Assuming the footer is 70px high */
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.bg {
+    flex: 1;
+}
+
+  
+  tr {
+    color: white; /* Changes text color for rows */
+  }
+.navbar-default {
+    background-color: rgba(255,255,255,0.1) !important; /* Set your desired color */
+    background-image: none !important; /* Disable the gradient */
+    backdrop-filter: blur(20px);
+    border: none;
+   border-top: solid 1px white;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff!important;
+}
+.navbar-brand, .navbar-nav>li>a {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .25);
+    color: #fff;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.sr-only {
+background-color: transparent;
+color: blue;
+z-index: 1;
+}
+.log{
+    color: white!important;
+}
+.log1{
+    color: white!important;
+}
+.gptbutton {
+    min-width: 300px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.gptbutton:hover {
+    background-color: #45a049; /* Darker green on hover */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+}
+.ques{
+    color:white;
+}
+
+.modal-content{
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+input.form-control {
+    background-color: transparent;
+    color: #eee !important;
+}
+fieldset {
+    border-color: #eee;
+    padding: 20px;
+    font: 15px "Century Gothic", "Times Roman", sans-serif;
+    border: 1px solid #eee; /* Slight border for definition */
+    background: rgba(255, 255, 255, 0.1);
+
+    border-radius: 10px; /* Rounded corners */
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin-left: 60px;
+}
+input.form-control::placeholder {
+    color: white; /* Set the color for placeholder text */
+    opacity: 1; /* Ensures the color opacity is fully applied */
+}
+/* navbar problem */
+
+.navbar {
+    z-index: 1000; /* Ensure it's above other elements */
+}
+.navbar-nav > li > a {
+    color: #fff; /* Default text color */
+    padding: 15px 20px; /* Adjust padding as necessary */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition */
+    background-color: rgba(255, 187, 51, 0); /* Semi-transparent base background */
+}
+
+/* Hover effect for navbar links */
+.navbar-nav > li > a:hover {
+    color: rgba(255, 187, 51, 0.7); /* Darker semi-transparent background on hover */
+    transform: scale(1.05); /* Slightly increase size */
+    border: solid 2px white;
+    border-radius: 5px;
+}
+
+/* Active link */
+.navbar-nav > li.active > a {
+    background-color: rgba(255, 187, 51, 0.5); /* Different background for active link */
+    color: #fff; /* Active text color */
+}

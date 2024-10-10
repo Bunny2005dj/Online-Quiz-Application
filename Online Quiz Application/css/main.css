@@ -1,0 +1,334 @@
+/* General Body Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    font: 15px "Century Gothic", "Times Roman", sans-serif;
+    background: grey; /* Fallback background color */
+    background-attachment: fixed;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Background Image Wrapper */
+.bg1 {
+    background: url('../image/bg.jpg') no-repeat center center; /* Ensure the image is fixed */
+    background-size: cover; /* Make sure the image covers the entire background */
+    height: 100%; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+}
+
+/* Font-face Declarations */
+@font-face {
+    font-family: 'typo';
+    src: url('../fonts/typo.ttf');
+}
+
+@font-face {
+    font-family: 'gothic';
+    src: url('../fonts/gothics.ttf');
+}
+
+/* Panel Styles */
+.panel {
+    border-color: #eee;
+    margin: 40px;
+    margin-top: 3vh;
+    padding: 20px;
+    font: 15px "Century Gothic", "Times Roman", sans-serif;
+    border: 1px solid #eee; /* Slight border for definition */
+    background: rgba(255, 255, 255, 0.1);
+
+    border-radius: 10px; /* Rounded corners */
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    display: inline-block;
+}
+
+/* Title Styles */
+.title {
+    color: orange; /* Make the title stand out */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px; /* Adjust padding as necessary */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(32, 32, 32, 0); /* Transparent background */
+    z-index: 99;
+    height: 55px; /* Height of the header */
+}
+
+.logo {
+    font-size: 55px; /* Adjust the font size as needed */
+    color: #fff; /* Change the color of the logo text */
+    font-weight: bold;
+}
+
+.btnLogin-popup {
+    background-color: #007bff; /* Change button color */
+    color: white; /* Change button text color */
+    border: none;
+    padding: 10px 20px; /* Adjust padding as necessary */
+    cursor: pointer; /* Pointer on hover */
+    border-radius: 5px; /* Rounded corners for button */
+}
+
+.btnLogin-popup:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Subtitle and Form Titles */
+.title1 {
+    font: 16px "Century Gothic", "Times Roman", sans-serif;
+}
+
+.title2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+/* Button Styles */
+.sub1 {
+    width: 100px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+
+    font-weight: 500;
+    margin-right: 20px;
+    margin-top: 10px;
+    outline: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.sub1:hover {
+    background: #fff;
+    color: #162938;
+}
+
+/* Submit Button Styling */
+.sub {
+    width: 100%;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 15px;
+    border: solid 2px;
+    border-color: green;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #fff;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sub:hover {
+    background-color: green;
+}
+
+/* Typing Effect Styles */
+.typing-section {
+    text-align: left; /* Center the typing text */
+    color: white; /* Set text color */
+    font-size: 30px; /* Adjust font size */
+    font-family: 'typo'; /* Use custom font */
+    margin-bottom: 200px;
+    margin-left: 85px;
+}
+
+.typing-section h1 {
+    display: inline; /* Display inline for typing effect */
+}
+
+/* Footer Styles */
+.footer {
+    font-size: 15px;
+    background-color: transparent; /* Transparent footer */
+    color: #fff; /* White text for visibility */
+    padding: 15px 75px; /* Adjust padding as necessary */
+    display: flex;
+    justify-content: space-between; /* Space between links and logo */
+    align-items: center; /* Vertically align items */
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000; /* Footer stays on top */
+    border: none; /* No border */
+    box-shadow: none; /* No shadow */
+}
+
+.footer-nav {
+    display: flex; /* Align links horizontally */
+    gap: 35px; /* Space between links */
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 70%;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transform-origin: right;
+}
+
+.footer a:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Footer Logo */
+.footer-logo {
+    font-size: 16px;
+    color: #fff;
+    padding-right: 20px;
+}
+
+/* Responsive Footer for Smaller Screens */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack items vertically on small screens */
+        text-align: center;
+    }
+
+    .footer-nav {
+        margin-bottom: 15px;
+        justify-content: center; /* Center links */
+    }
+
+    .footer-logo {
+        margin-top: 10px;
+    }
+}
+
+/* Box Styles */
+.footer .box a {
+    padding: 5px 15px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.footer .box {
+    border: none; /* Remove box borders */
+}
+
+.box {
+    padding: 9px;
+}
+
+/* Form and Layout Enhancements */
+hr {
+    color: #000000;
+}
+
+.top {
+    margin-top: 20px;
+}
+
+.log1 {
+    font: 15px 'Ubuntu', sans-serif;
+    color: orange;
+    margin-left: 10px;
+}
+
+.log {
+    margin: 10px;
+    margin-right: 60px;
+    margin-left: 5px;
+    color: orange;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.log:hover {
+    color: #9acd32;
+    border-top: 2px solid;
+    border-color: orange;
+    text-decoration: none;
+}
+
+/* Modal Content Styling */
+.modal-content {
+    border: none; /* Remove borders from modal */
+}
+
+.header {
+    height: 75px;
+}
+
+input.form-control {
+    background-color: transparent;
+    color: #eee !important;
+}
+
+select.form-control {
+    background-color: transparent; /* Same background color as input fields */
+    color: white; /* Text color */
+    border: solid 1px; /* Optional: Removes default border */
+    border-color: rgba(255, 255, 255, 0.5);
+    padding: 5px; /* Optional: Adjust padding if needed */
+}
+.containgdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 25px;
+}
+.panel{
+    width: 500px;
+}
+input.form-control::placeholder {
+    color: white; /* Set the color for placeholder text */
+    opacity: 1; /* Ensures the color opacity is fully applied */
+}
+.modal-content{
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar-nav > li > a {
+    color: #fff; /* Default text color */
+    padding: 15px 20px; /* Adjust padding as necessary */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transition */
+    background-color: rgba(255, 187, 51, 0); /* Semi-transparent base background */
+}
+
+/* Hover effect for navbar links */
+.navbar-nav > li > a:hover {
+    color: rgba(255, 187, 51, 0.7); /* Darker semi-transparent background on hover */
+    transform: scale(1.05); /* Slightly increase size */
+    border: solid 2px white;
+    border-radius: 5px;
+}
+
+/* Active link */
+.navbar-nav > li.active > a {
+    background-color: rgba(255, 187, 51, 0.5); /* Different background for active link */
+    color: #fff; /* Active text color */
+}
