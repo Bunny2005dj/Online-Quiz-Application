@@ -3,7 +3,7 @@
 The **Online Quiz Application** allows users to participate in quizzes, view results, and manage quizzes in a user-friendly environment. The application is built using PHP for backend logic, MySQL for database management, and HTML, CSS, and JavaScript for the frontend.
 
 ## Developed By
-Axith
+Akshith Perakam
 
 ## Features
 - **User Authentication**: Secure login and registration for quiz participants and administrators.
